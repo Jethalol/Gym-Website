@@ -4,7 +4,10 @@ body {
   padding: 0;
   /* height: 2160px; */
   height: 100%;
-  background-image: url("/images/lorenzo-fatto-offidani-oYSUTt7Cj60-unsplash.jpg");
+  background-image: url("../images/lorenzo-fatto-offidani-oYSUTt7Cj60-unsplash.jpg");
+
+  /* .. means to look in parent directory, only '/' before images folder will also work in vs code but will create problems in github or other editors that's why either writing full path or correct relative path is good practice. */
+
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Baloo Bhai 2", cursive;
@@ -21,16 +24,14 @@ body {
 }
 
 .left div {
-
   position: relative;
-  right: 25px; 
+  right: 25px;
   line-height: 19px;
   font-size: 26px;
-  
+
   /* why we used position relative and then right instead of just using margin-x value? it is because margin or padding will set it from and to div border only which won't get us our desired result. */
 
   /* We made it relative only and not absolute because we wouldn't be able to achieve Mansuri fitness before image left because the ancestor is also absolute and absolute div will inherit from its first ancestor (which will restrict us)  */
-  
 }
 
 /* Note that position: relative means the element is positioned relative to its natural position and position: absolute means the element is positioned relative to its first position:relative or position:absolute ancestor. */
